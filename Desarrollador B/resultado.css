@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+
+body {
+    background-color: #f0f4f8; 
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    padding: 3rem 2rem;
+}
+
+.section-formulario {
+    width: 100%;
+    max-width: 65rem; 
+    padding: 5rem; 
+    background-color: #ffffff;
+    border-radius: 2rem; 
+    box-shadow: 0 1.5rem 3.5rem rgba(12, 23, 53, 0.15); 
+}
+
+.form-form {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem; 
+}
+
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem; 
+    width: 100%;
+}
+
+.grupo-input label {
+    font-size: 2rem; 
+    font-weight: 700;
+    color: #0c1735;
+}
+
+.grupo-input label span,
+.grupo-checkbox label span {
+    color: #ef4444; 
+    font-weight: bold;
+    margin-left: 0.2rem;
+}
+
+.grupo-input input,
+.grupo-input select {
+    width: 100%;
+    padding: 1.6rem; 
+    border: 0.2rem solid #cbd5e1; 
+    border-radius: 0.8rem;
+    background-color: #ffffff;
+    font-size: 1.8rem; 
+    color: #1e293b;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.grupo-input input:focus,
+.grupo-input select:focus {
+    border-color: #3B82F6;
+    box-shadow: 0 0 0 0.4rem rgba(59, 130, 246, 0.2);
+}
+
+.grupo-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+.grupo-checkbox input {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+}
+
+.grupo-checkbox label {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #0c1735;
+    cursor: pointer;
+}
+
+.form-actions {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.btn-ingresar,
+.btn-limpiar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.8rem;
+    border-radius: 0.8rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-ingresar {
+    background-color: #3B82F6;
+    color: #ffffff;
+    border: 0.2rem solid #3B82F6;
+}
+
+.btn-ingresar:hover {
+    background-color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.btn-limpiar {
+    background-color: #ffffff;
+    color: #64748b;
+    border: 0.2rem solid #cbd5e1;
+}
+
+.btn-limpiar:hover {
+    background-color: #f8fafc;
+    color: #334155;
+    border-color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+    .section-formulario {
+        padding: 3rem 2rem;
+    }
+    .form-actions {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    .grupo-input label {
+        font-size: 1.8rem;
+    }
+    .grupo-checkbox label {
+        font-size: 1.6rem;
+    }
+}
