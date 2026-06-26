@@ -148,6 +148,13 @@ main {
     border-color: #94a3b8;
 }
 
+.mensaje-error {
+    font-size: 1.4rem;
+    color: #ef4444;
+    font-weight: 600;
+    min-height: 1.8rem;
+}
+
 /* Ajuste rápido para celulares si lo probás desde ahí */
 @media (max-width: 600px) {
     .section-formulario {
